@@ -6,25 +6,48 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+
     <script src="https://unpkg.com/vue@3.0.4/dist/vue.global.js"></script>
 
-    <title>Vue 3 Simple and Modern</title>
+    <title>VueJS Simple and Modern</title>
 </head>
 <body>
-    <div id="app">
-        <h1>{{ title }}</h1>       
-
-        <counter-display :count="count"></counter-display>
+    <section id="app">
+        <header-bar>
+            {{ title }}
+        </header-bar>
         
-        <button @click="count++">Increment</button>
+        <main>
+            <h2>
+                A simple demo VueJS app:
+            </h2>
+            
+            <ul>
+                <li>Using VueJS as an external library.</li>
+                <li>Define VueJS components in a external JavaScript file.</li>
+                <li>Inside those external JavaScript you define the HTML template &amp; the VueJS scripting.</li>
+                <li>Using 1 external CSS file.</li>
+            </ul>
 
-        <button @click="count--">Decrement</button>
+
+            <counter-display :count="count">
+                This is my counter:
+            </counter-display>
+
+            <nav>
+                <button @click="onIncrement">Increment</button>
+                
+                <button @click="onDecrement">Decrement</button>
+            </nav>            
+        </main>       
 
         <footer-bar></footer-bar>
-    </div>
+    </section>
 
     <script src="js/main.js"></script>
     <script src="js/components/CounterDisplay.js"></script>
+    <script src="js/components/HeaderBar.js"></script>
     <script src="js/components/FooterBar.js"></script>
 
     <script>

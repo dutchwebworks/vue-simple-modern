@@ -4,5 +4,13 @@ const app = Vue.createApp({
             title: "Vue Simple and Modern",
             count: 0
         }
+    },
+    methods: {
+        onIncrement() {
+            this.count++;
+        },
+        onDecrement() {
+            return (this.count > 0) ? this.count-- : 0;
+        }
     }
 });

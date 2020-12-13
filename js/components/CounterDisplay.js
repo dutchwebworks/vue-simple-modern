@@ -1,14 +1,15 @@
 app.component("counter-display", {
-  template:
-    /*html*/`
-        <div class="counter-display">
-            Counter Display component: {{ count }}
-        </div>
-    `,
-    props: {
+  props: {
         count: {
             type: Number,
-            default: 0
+            default: 0,
+            validator: value => value > 0
         }
-    }
+    },
+    template:
+    /*html*/`
+        <div class="counter-display">
+            <h2><slot></slot> {{ count }}</h2>
+        </div>
+    `    
 });

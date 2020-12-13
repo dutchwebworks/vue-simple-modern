@@ -1,0 +1,66 @@
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
+h1 {
+    color: deeppink;
+    font-weight: 300;
+    font-size: 42px;
+}
+
+h2 {
+    color: deepskyblue;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+a {
+    color: deeppink;
+}
+
+button {
+    padding: 15px 30px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+    background-color: deepskyblue;    
+}
+
+button + button {
+    margin-left: 20px;
+}
+
+header {
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer p,
+footer a {
+    color: #444;
+}
+
+footer a:hover {
+    color: deeppink;
+}

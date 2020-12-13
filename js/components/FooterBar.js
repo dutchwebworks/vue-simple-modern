@@ -1,9 +1,15 @@
 app.component("footer-bar", {
-    template: 
+  template:
     /*html*/
     `  
-        <footer>
-            &copy; 2020, Dutchwebworks
+        <footer>            
+            <p>By Dennis Burger, december 2020</p>
+
+            <p>
+                <a href="https://github.com/dutchwebworks/vue-simple-modern" target="_blank">
+                    View on Github
+                </a>
+            </p>
         </footer>    
-    `
+    `,
 });
